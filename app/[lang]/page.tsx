@@ -42,7 +42,7 @@ export default async function Home({
       <body>
         <SmoothScroll>
           <Header lang={lang} dict={dict} />
-          <main>
+          <main className="flex-1">
             <Hero dict={dict} />
             <About dict={dict} />
             <Skills dict={dict} />

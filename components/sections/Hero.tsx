@@ -100,22 +100,22 @@ export default function Hero({ dict }: HeroProps) {
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[var(--accent)] rounded-full blur-[96px]" />
       </div>
 
-      <div className="relative z-10 text-center px-6 max-w-4xl">
-        <h1
-          ref={titleRef}
-          className="text-5xl md:text-7xl font-bold mb-6 text-gradient"
-        >
-          {dict.hero.title}
-        </h1>
-        
-        <p
-          ref={subtitleRef}
-          className="text-xl md:text-2xl text-[var(--text-secondary)] mb-10 max-w-2xl mx-auto"
-        >
-          {dict.hero.subtitle}
-        </p>
+        <div className="relative z-10 text-center px-6 max-w-4xl">
+          <h1
+            ref={titleRef}
+            className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 text-gradient"
+          >
+            {dict.hero.title}
+          </h1>
+          
+          <p
+            ref={subtitleRef}
+            className="text-lg lg:text-xl xl:text-2xl text-[var(--text-secondary)] mb-8 max-w-xl mx-auto"
+          >
+            {dict.hero.subtitle}
+          </p>
 
-        <button
+          <button
           ref={ctaRef}
           onClick={scrollToProjects}
           className="px-8 py-4 bg-[var(--accent)] text-[var(--background)] font-semibold rounded-full hover:scale-105 transition-transform"

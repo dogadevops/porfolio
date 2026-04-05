@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useRef, useEffect } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -56,11 +57,11 @@ export default function About({ dict }: AboutProps) {
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div ref={contentRef}>
-            <h2 className="text-4xl font-bold mb-6">{dict.about.title}</h2>
-            <p className="text-lg text-[var(--text-secondary)] mb-8 leading-relaxed">
-              {dict.about.description}
-            </p>
+           <div ref={contentRef}>
+             <h2 className="text-3xl lg:text-4xl font-bold mb-6">{dict.about.title}</h2>
+             <p className="text-base lg:text-lg text-[var(--text-secondary)] mb-8 leading-relaxed">
+               {dict.about.description}
+             </p>
 
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-3 text-[var(--text-secondary)]">
@@ -75,12 +76,17 @@ export default function About({ dict }: AboutProps) {
           </div>
 
           <div ref={imageRef} className="relative">
-            <div className="aspect-square rounded-2xl overflow-hidden glass glow">
-              <div className="w-full h-full bg-gradient-to-br from-[var(--accent-dim)] to-[var(--card)] flex items-center justify-center">
-                <span className="text-8xl">👨‍💻</span>
-              </div>
+            <div className="absolute -inset-2 rounded-[2rem] bg-gradient-to-br from-[var(--accent)]/20 via-transparent to-[var(--accent-dim)]/10 blur-3xl opacity-70" />
+            <div className="aspect-square rounded-[2rem] overflow-hidden glass glow relative ring-1 ring-white/10 shadow-[0_40px_120px_-70px_rgba(0,212,255,0.8)] transition-transform duration-500 hover:-translate-y-1 hover:shadow-[0_50px_140px_-90px_rgba(0,212,255,0.8)]">
+              <Image
+                src="/photo.png"
+                alt="Perfil"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#0a0a0a]/90 to-transparent" />
             </div>
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-[var(--accent)] rounded-2xl blur-xl opacity-50" />
+            <div className="absolute -bottom-5 -right-5 w-28 h-28 bg-[var(--accent)] rounded-2xl blur-3xl opacity-50" />
           </div>
         </div>
       </div>

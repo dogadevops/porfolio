@@ -65,14 +65,14 @@ export default function Skills({ dict }: SkillsProps) {
       className="py-24 md:py-32 px-6 bg-[var(--card)]/30"
     >
       <div className="max-w-7xl mx-auto">
-        <div ref={titleRef} className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">{dict.skills.title}</h2>
-          <p className="text-lg text-[var(--text-secondary)]">
-            {dict.skills.subtitle}
-          </p>
-        </div>
+       <div ref={titleRef} className="text-center mb-12">
+         <h2 className="text-3xl lg:text-4xl font-bold mb-4">{dict.skills.title}</h2>
+         <p className="text-base lg:text-lg text-[var(--text-secondary)]">
+           {dict.skills.subtitle}
+         </p>
+       </div>
 
-        <div ref={categoriesRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+       <div ref={categoriesRef} className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {Object.entries(skillsByCategory).map(([category, skillList]) => (
             <div
               key={category}
