@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Fullstack Developer",
+    "subtitle": "Building scalable solutions with modern technology",
+    "cta": "View my projects",
+    "scroll": "Scroll to explore"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a fullstack developer with experience building SaaS applications, payment gateways, and distributed systems. I love creating robust solutions that make a difference.",
+    "location": "Location",
+    "availability": "Available for projects"
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "The tools I use to bring your ideas to life"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My journey as a developer"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Featured work",
+    "view": "View project",
+    "code": "Code"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind? Let's talk",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent successfully",
+    "social": "Connect with me"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}

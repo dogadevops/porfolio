@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Skills",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Fullstack Developer",
+    "subtitle": "Construyendo soluciones escalables con tecnología moderna",
+    "cta": "Ver mis proyectos",
+    "scroll": "Scroll para explorar"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy un desarrollador fullstack con experiencia en la construcción de aplicaciones SaaS, pasarelas de pago y sistemas distribuidos. Me apasiona crear soluciones robustas que marquen la diferencia.",
+    "location": "Ubicación",
+    "availability": "Disponible para proyectos"
+  },
+  "skills": {
+    "title": "Skills & Tecnologías",
+    "subtitle": "Las herramientas que uso para dar vida a tus ideas"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Mi camino como developer"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Trabajos destacados",
+    "view": "Ver proyecto",
+    "code": "Código"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes un proyecto en mente? Hablemos",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "Mensaje enviado correctamente",
+    "social": "Conecta conmigo"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados"
+  }
+}
