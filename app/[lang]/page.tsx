@@ -38,22 +38,18 @@ export default async function Home({
   const dict = await getDictionary(lang as "es" | "en");
 
   return (
-    <html lang={lang}>
-      <body>
-        <SmoothScroll>
-          <Header lang={lang} dict={dict} />
-          <main className="flex-1">
-            <Hero dict={dict} />
-            <About dict={dict} />
-            <Skills dict={dict} />
-            <Experience dict={dict} />
-            <Projects dict={dict} />
-            <Contact dict={dict} />
-          </main>
-          <Footer lang={lang} dict={dict} />
-        </SmoothScroll>
-      </body>
-    </html>
+    <SmoothScroll>
+      <Header lang={lang} dict={dict} />
+      <main className="flex-1">
+        <Hero dict={dict} />
+        <About dict={dict} />
+        <Skills dict={dict} />
+        <Experience dict={dict} />
+        <Projects dict={dict} />
+        <Contact dict={dict} />
+      </main>
+      <Footer lang={lang} dict={dict} />
+    </SmoothScroll>
   );
 }
 

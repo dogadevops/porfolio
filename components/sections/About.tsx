@@ -82,6 +82,7 @@ export default function About({ dict }: AboutProps) {
                 src="/photo.png"
                 alt="Perfil"
                 fill
+                sizes="(max-width: 768px) 100vw, 400px"
                 className="object-cover"
               />
               <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#0a0a0a]/90 to-transparent" />
