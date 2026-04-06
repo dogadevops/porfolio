@@ -33,6 +33,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
   overflow-x: hidden;
+  cursor: default;
 }
 
 ::selection {
@@ -80,20 +81,25 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background:
-    linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px),
-    radial-gradient(
-      circle at var(--x, 50%) var(--y, 50%),
-      rgba(0, 212, 255, 0.1) 0%,
-      transparent 60%
-    ),
-    var(--background);
-  background-size:
-    5px 5px,
-    5px 5px,
-    100% 100%,
-    100% 100%;
+  background-color: var(--background);
+  background-image: radial-gradient(circle, rgba(0, 212, 255, 0.12) 1px, transparent 1px);
+  background-size: 18px 18px;
+  background-repeat: repeat;
   pointer-events: none;
   z-index: 0;
+}
+
+.canvas-background::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(0, 212, 255, 0.38) 1px, transparent 1px);
+  background-size: 18px 18px;
+  background-repeat: repeat;
+  mask-image: radial-gradient(circle 120px at var(--x, 50%) var(--y, 50%), white 0%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle 120px at var(--x, 50%) var(--y, 50%), white 0%, transparent 80%);
+  mask-mode: alpha;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  pointer-events: none;
 }
