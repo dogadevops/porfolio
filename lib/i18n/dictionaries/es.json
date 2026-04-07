@@ -15,7 +15,7 @@
   "about": {
     "title": "Sobre mí",
     "description": "Soy un desarrollador fullstack con experiencia en la construcción de aplicaciones SaaS, pasarelas de pago y sistemas distribuidos. Me apasiona crear soluciones robustas que marquen la diferencia.",
-    "location": "Ubicación",
+    "location": "Cucuta, Colombia",
     "availability": "Disponible para proyectos"
   },
   "skills": {
@@ -41,7 +41,8 @@
     "send": "Enviar mensaje",
     "sending": "Enviando...",
     "success": "Mensaje enviado correctamente",
-    "social": "Conecta conmigo"
+    "social": "Conecta conmigo",
+    "phone": "301 3423243"
   },
   "footer": {
     "rights": "Todos los derechos reservados"

@@ -79,7 +79,7 @@ export default function About({ dict }: AboutProps) {
             <div className="absolute -inset-2 rounded-[2rem] bg-gradient-to-br from-[var(--accent)]/20 via-transparent to-[var(--accent-dim)]/10 blur-3xl opacity-70" />
             <div className="aspect-square rounded-[2rem] overflow-hidden glass glow relative ring-1 ring-white/10 shadow-[0_40px_120px_-70px_rgba(0,212,255,0.8)] transition-transform duration-500 hover:-translate-y-1 hover:shadow-[0_50px_140px_-90px_rgba(0,212,255,0.8)]">
               <Image
-                src="/photo.png"
+                src="/Snapshot_2026.jpg"
                 alt="Perfil"
                 fill
                 className="object-cover"

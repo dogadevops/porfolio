@@ -14,10 +14,10 @@ interface FooterProps {
 
 export default function Footer({ lang, dict }: FooterProps) {
   const socialLinks = [
-    { icon: GitBranch, href: 'https://github.com', label: 'GitHub' },
-    { icon: Link, href: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: GitBranch, href: 'https://github.com/dogadevops', label: 'GitHub' },
+    { icon: Link, href: 'https://www.linkedin.com/in/jose-garcia-31bb103b9/', label: 'LinkedIn' },
     { icon: X, href: 'https://twitter.com', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:tu@email.com', label: 'Email' },
+    { icon: Mail, href: 'dogadevops@gmail.com', label: 'Email' },
   ];
 
   return (

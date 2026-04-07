@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { GitBranch, Link, X, Mail, Send, ChevronUp } from "lucide-react";
+import { GitBranch, Link, X, Mail, Send, ChevronUp, PhoneCall } from "lucide-react";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -38,7 +38,7 @@ export default function Contact({ dict }: any) {
       id="contact"
       ref={containerRef}
       className="py-24 px-6 relative z-10"
-      // style={{ backgroundColor: '#0a0a0a' }}
+    // style={{ backgroundColor: '#0a0a0a' }}
     >
       {/* ESTILO CRÍTICO: 
           Ocultamos los elementos mediante CSS antes de que GSAP tome el control.
@@ -85,28 +85,29 @@ export default function Contact({ dict }: any) {
             <h3 className="text-2xl font-semibold mb-8 text-white">{dict.contact.social}</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
-                { icon: GitBranch, label: "GitHub" },
-                { icon: Link, label: "LinkedIn" },
-                { icon: X, label: "Twitter" },
-                { icon: Mail, label: "Email" },
+                { icon: GitBranch, href: 'https://github.com/dogadevops', label: 'GitHub' },
+                { icon: Link, href: 'https://www.linkedin.com/in/jose-garcia-31bb103b9/', label: 'LinkedIn' },
+                { icon: X, href: 'https://twitter.com', label: 'Twitter' },
+                { icon: Mail, href: 'mailto:dogadevops@gmail.com', label: 'Email' },
+                { icon: PhoneCall, href: `tel:${dict.contact.phone}`, label: "Phone" }
               ].map((link) => (
                 <a
                   key={link.label}
-                  href="#"
+                  href={link.href}
                   className="flex items-center gap-4 px-6 py-4 bg-[#1a1a1a] border border-[#333] rounded-xl text-gray-400 hover:text-[#00d4ff] transition-all"
                 >
                   <link.icon size={22} />
                   <span className="font-medium">{link.label}</span>
                 </a>
               ))}
+              {dict.contact.phone}
             </div>
           </div>
         </div>
         {/* FOOTER */}
         <footer className="animate-on-scroll pt-10 border-t border-[#333] flex flex-col md:flex-row justify-between items-center gap-8 w-full" >
           <div className="text-center md:text-left">
-            {/* Reemplaza 'Tu Nombre' por tu nombre real o mantén dict.contact.name */}
-            <p className="text-2xl font-black text-white uppercase tracking-tighter" style= {{color: '#97e0ee'}}>
+            <p className="text-2xl font-black text-white uppercase tracking-tighter" style={{ color: '#97e0ee' }}>
               JOSE GARCIA
             </p>
             <p className="text-[#00d4ff] text-sm font-medium mt-1">

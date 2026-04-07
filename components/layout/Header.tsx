@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Globe } from 'lucide-react';
+import Image from 'next/image';
 
 interface HeaderProps {
   lang: string;
@@ -54,9 +55,17 @@ export default function Header({ lang, dict }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link
           href={`/${lang}`}
-          className="text-xl font-bold text-gradient"
+          className="flex items-center gap-3 text-xl font-bold text-gradient"
         >
-          JD
+          <Image
+            src="/Imagen2.png"
+            alt="Logo"
+            width={32}
+            height={32}
+            className="rounded-full object-cover"
+          />
+          <span className="text-lg">💻</span>
+          
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
